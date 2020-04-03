@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Monsterrat', sans-serif;
 }
 
 .popbar {
@@ -106,18 +107,38 @@
   text-decoration: line-through;
 }
 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #efefef;
+  color: black;
+}
+
 .btn {
   border: none;
   text-transform: uppercase;
   text-align: center;
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .btn-slide {
   background-color: whitesmoke;
+  border: 1px solid whitesmoke;
   width: 110px;
   padding: 14px 0;
   margin-right: 8px;
   margin-top: 20px;
+  letter-spacing: 3px;
+  transform-origin: left center;
+}
+
+.btn-slide:hover {
+  background-color: transparent;
+  color: #efefef;
+  transition: color 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .btn-learn-more {
@@ -132,4 +153,13 @@
   word-spacing: 2px;
   letter-spacing: 6px;
   transform: translate(-50%);
+}
+
+.btn-learn-more:hover {
+  color: black;
+  background-color: #efefef;
+  border: 1px black solid;
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+  border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform-origin: left center;
 }
