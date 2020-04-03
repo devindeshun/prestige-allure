@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.popbar {
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12px;
+  border-bottom: black 1px solid;
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  color: white;
+  transition: color ease-in 0.2s;
+}
+
+.navbar:hover {
+  background: #efefef;
+  color: black;
+}
+
+.fa-search {
+  padding-right: 8px;
+}
+
+.slide {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0)),
+    url(/img/Slide-4_400x.webp);
+  /* background-image: url(/img/Slide-4_400x.webp); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.411);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.text {
+  position: absolute;
+  bottom: 60px;
+  left: 22px;
+  line-height: 2;
+  color: whitesmoke;
+}
+
+.text h6 {
+  font-size: 18px;
+}
+
+.text h5 {
+  font-size: 40px;
+}
+
+.best-sellers {
+  background-color: #efefef;
+}
+
+.best-sellers h6 {
+  text-align: center;
+  padding-top: 84px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+.product-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #efefef;
+}
+
+.product-imgs img {
+  width: 100%;
+}
+
+.product-imgs h4 {
+  font-size: 12px;
+  text-align: center;
+}
+
+.product-imgs p {
+  text-align: center;
+  color: #000000bd;
+  margin-bottom: 100px;
+}
+
+.product-imgs span {
+  text-decoration: line-through;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn-slide {
+  background-color: whitesmoke;
+  width: 110px;
+  padding: 14px 0;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+.btn-learn-more {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: black;
+  color: whitesmoke;
+  left: 50%;
+  top: -50px;
+  padding: 20px;
+  word-spacing: 2px;
+  letter-spacing: 6px;
+  transform: translate(-50%);
+}
