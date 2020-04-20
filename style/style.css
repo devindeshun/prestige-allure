@@ -2,29 +2,31 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Monsterrat', sans-serif;
+  font-family: "Monsterrat", sans-serif;
 }
 
 .popbar {
-  text-align: center;
   background-color: black;
   color: whitesmoke;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-align: center;
   text-transform: uppercase;
-  padding: 8px 0;
+  padding: 14px 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 12px;
-  border-bottom: black 1px solid;
+  padding: 20px 24px;
+  border-bottom: whitesmoke 1px solid;
   background: transparent;
   position: absolute;
   z-index: 1;
   width: 100%;
   color: white;
-  transition: color ease-in 0.2s;
+  transition: color ease-in 0.15s;
 }
 
 .navbar:hover {
@@ -32,39 +34,77 @@
   color: black;
 }
 
+.logo {
+  width: 130px;
+}
+
+.navbar:hover .logo {
+  content: url(/img/Logo-black-2x_130x@2x.png);
+}
+
+.fa-bars {
+  font-size: 1.3rem;
+}
+
 .fa-search {
   padding-right: 8px;
 }
 
-.slide {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0)),
-    url(/img/Slide-4_400x.webp);
-  /* background-image: url(/img/Slide-4_400x.webp); */
+.slide-1-content {
+  background: url(/img/Slide-4_1800x.webp) bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 90.2vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.325);
+}
+
+.slide-2-content {
+  background: url(/img/grand-sac-collection_f9995533-f4ef-4437-bed5-def3c64a91fc_1500x.jpg)
+    center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.411);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slide-3-content {
+  background: url(/img/double-pochette-collection_1500x.webp)
+    center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .text {
   position: absolute;
   bottom: 60px;
-  left: 22px;
-  line-height: 2;
+  left: 80px;
+  line-height: 2.5;
   color: whitesmoke;
 }
 
 .text h6 {
-  font-size: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .text h5 {
-  font-size: 40px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
 }
 
 .best-sellers {
@@ -107,12 +147,16 @@
   text-decoration: line-through;
 }
 
-
 .sticky {
   position: fixed;
   top: 0;
   background: #efefef;
   color: black;
+  box-shadow: 0px 1px 7px #000000;
+}
+
+.sticky .logo {
+  content: url(/img/Logo-black-2x_130x@2x.png);
 }
 
 .btn {
@@ -126,7 +170,7 @@
 .btn-slide {
   background-color: whitesmoke;
   border: 1px solid whitesmoke;
-  width: 110px;
+  width: 130px;
   padding: 14px 0;
   margin-right: 8px;
   margin-top: 20px;
@@ -146,6 +190,7 @@
   position: relative;
   justify-content: center;
   background-color: black;
+  border: 1px black solid;
   color: whitesmoke;
   left: 50%;
   top: -50px;
@@ -160,6 +205,6 @@
   background-color: #efefef;
   border: 1px black solid;
   transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-  border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform-origin: left center;
 }
