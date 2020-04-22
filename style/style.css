@@ -39,7 +39,7 @@
 }
 
 .navbar:hover .logo {
-  content: url(/img/Logo-black-2x_130x@2x.png);
+  content: url(../img/Logo-black-2x_130x@2x.png);
 }
 
 .fa-bars {
@@ -51,7 +51,7 @@
 }
 
 .slide-1-content {
-  background: url(/img/Slide-4_1800x.webp) bottom;
+  background: url(../img/Slide-4_1800x.webp) bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90.2vh;
@@ -62,7 +62,7 @@
 }
 
 .slide-2-content {
-  background: url(/img/grand-sac-collection_f9995533-f4ef-4437-bed5-def3c64a91fc_1500x.jpg)
+  background: url(../img/grand-sac-collection_f9995533-f4ef-4437-bed5-def3c64a91fc_1500x.jpg)
     center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,8 +74,7 @@
 }
 
 .slide-3-content {
-  background: url(/img/double-pochette-collection_1500x.webp)
-    center;
+  background: url(../img/double-pochette-collection_1500x.webp) center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
@@ -156,7 +155,7 @@
 }
 
 .sticky .logo {
-  content: url(/img/Logo-black-2x_130x@2x.png);
+  content: url(../img/Logo-black-2x_130x@2x.png);
 }
 
 .btn {
