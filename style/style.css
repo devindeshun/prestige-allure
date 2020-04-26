@@ -146,6 +146,78 @@
   text-decoration: line-through;
 }
 
+.footer {
+  display: flex;
+  margin: 60px auto;
+  width: 90%;
+  height: 30vh;
+}
+
+.footer-1 {
+  width: 30%;
+  margin-right: 40px;
+}
+
+.footer-1 .fab {
+  margin-right: 10px;
+}
+
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-4 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.news-descr,
+.email,
+.subscribe {
+  margin-top: 20px;
+}
+
+.news-descr {
+  color: rgb(80, 80, 80);
+}
+
+.about-descr {
+  color: rgb(80, 80, 80);
+}
+
+.email {
+  padding: 15px;
+}
+
+.subscribe {
+  margin-top: 70px;
+}
+
+.about-descr,
+.social {
+  margin-top: 20px;
+}
+
+.link {
+  line-height: 30px;
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+}
+
+.products,
+.contact {
+  margin-top: 15px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -201,7 +273,7 @@
 
 .btn-learn-more:hover {
   color: black;
-  background-color: #efefef;
+  background-color: transparent;
   border: 1px black solid;
   transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
     border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
