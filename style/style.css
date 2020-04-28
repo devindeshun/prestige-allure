@@ -71,6 +71,7 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.325);
 }
 
 .slide-3-content {
@@ -82,6 +83,7 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.325);
 }
 
 .text {
@@ -93,14 +95,14 @@
 }
 
 .text h6 {
-  font-size: 12px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .text h5 {
-  font-size: 26px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 4px;
@@ -155,7 +157,7 @@
 
 .footer-1 {
   width: 30%;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 .footer-1 .fab {
@@ -192,6 +194,7 @@
 
 .about-descr {
   color: rgb(80, 80, 80);
+  width: 90%;
 }
 
 .email {
@@ -278,4 +281,37 @@
   transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
     border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform-origin: left center;
+}
+
+@media screen and (max-width: 480px) {
+  .product-imgs {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .text {
+    bottom: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .text h5 {
+    font-size: 1.4rem;
+  }
+  .subscribe {
+    width: 50%;
+    text-align: center;
+    justify-content: flex-start;
+    left: 0;
+    transform: translate(0);
+  }
 }
