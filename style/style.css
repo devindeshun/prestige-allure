@@ -5,17 +5,34 @@
   font-family: "Monsterrat", sans-serif;
 }
 
-.popbar {
-  background-color: black;
-  color: whitesmoke;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 14px 0;
+/* Icons */
+
+.fa-bars {
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
-#popup {
+.fa-search {
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.fa-shopping-bag{
+  cursor: pointer;
+}
+
+/* Sidebar */
+
+.sidebar{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  flex-direction: column;
+}
+
+/* Popup */
+
+.popup_wrapper {
   display: none;
 }
 
@@ -50,6 +67,18 @@
   padding: 10px 0;
 }
 
+/* Header */
+
+#popbar {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -69,21 +98,15 @@
   color: black;
 }
 
-.logo {
-  width: 130px;
-}
-
-.navbar:hover .logo {
+.navbar:hover #logo {
   content: url(../img/Logo-black-2x_130x@2x.png);
 }
 
-.fa-bars {
-  font-size: 1.3rem;
+#logo {
+  width: 130px;
 }
 
-.fa-search {
-  padding-right: 8px;
-}
+/* Slides */
 
 .slide-1-content {
   background: url(../img/Slide-4_1800x.jpg) bottom;
@@ -121,7 +144,7 @@
   box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.325);
 }
 
-.text {
+.slide-content {
   position: absolute;
   bottom: 60px;
   left: 80px;
@@ -129,25 +152,27 @@
   color: whitesmoke;
 }
 
-.text h6 {
+.slide-heading {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.text h5 {
+.slide-subtext {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 4px;
 }
 
-.best-sellers {
+/* Best Sellers */
+
+#best-sellers {
   background-color: #efefef;
 }
 
-.best-sellers h6 {
+.best-sellers-text {
   text-align: center;
   padding-top: 84px;
   padding-bottom: 10px;
@@ -157,31 +182,33 @@
   letter-spacing: 1.5px;
 }
 
-.product-imgs {
+.best-seller-imgs {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #efefef;
 }
 
-.product-imgs img {
+.best-seller-imgs img {
   width: 100%;
 }
 
-.product-imgs h4 {
+.best-seller-imgs h4 {
   font-size: 12px;
   text-align: center;
 }
 
-.product-imgs p {
+.best-seller-imgs p {
   text-align: center;
   color: #000000bd;
   margin-bottom: 100px;
 }
 
-.product-imgs span {
+.best-seller-imgs span {
   text-decoration: line-through;
 }
+
+/* Footer */
 
 .footer {
   display: flex;
@@ -256,6 +283,8 @@
   margin-top: 15px;
 }
 
+/* Sticky */
+
 .sticky {
   position: fixed;
   top: 0;
@@ -268,8 +297,11 @@
   content: url(../img/Logo-black-2x_130x@2x.png);
 }
 
+/* Buttons */
+
 .btn {
   border: none;
+  cursor: pointer;
   text-transform: uppercase;
   text-align: center;
   transform-origin: left center;
@@ -318,8 +350,10 @@
   transform-origin: left center;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 480px) {
-  .product-imgs {
+  .best-seller-imgs {
     flex-direction: column;
   }
   .footer {
