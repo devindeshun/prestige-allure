@@ -4,7 +4,7 @@ window.onscroll = function() {
 };
 
 // Get the header
-let header = document.querySelector(".navbar");
+let header = document.querySelector("#navbar");
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;
