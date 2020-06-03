@@ -5,50 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prestige - Allure</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <!-- Monsterrat Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Fontawesome icon pack -->
     <script
       src="https://kit.fontawesome.com/da541e26e9.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
+  <!-- Sidebar -->
+
+  <div class="sidebar_wrapper">
+    <div class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Popup -->
+
+  <div class="popup_wrapper" id="popup">
+    <div class="popup_container">
+      <h1 class="popup_title">Leaving so soon...?</h1>
+      <p>How about a 10% discount? Use code SAVE10 at checkout!</p>
+      <p class="close_popup">(click anywhere to close)</p>
+    </div>
+  </div>
+
+  <!-- Header: Popbar and Navigation Bar  -->
+
   <header>
-    <div class="popbar">
+    <div id="popbar">
       <p>Free Shipping on Orders over $70</p>
     </div>
-    <nav class="navbar">
-      <i class="fas fa-bars"></i>
-      <img class="logo" src="./img/Logo-white-2x_130x@2x.png" alt="" />
+    <nav id="navbar" class="navbar">
+      <i onclick="openNav()" class="fas fa-bars"></i>
+      <img
+        id="logo"
+        class="logo"
+        src="./img/Logo-white-2x_130x@2x.png"
+        alt=""
+      />
       <div class="nav-right">
         <i class="fas fa-search"></i>
         <i class="fas fa-shopping-bag"></i>
       </div>
     </nav>
   </header>
+
+  <!-- Body -->
+
   <body>
-    <div class="popup_wrapper" id="popup">
-      <div class="popup_container">
-        <h1 class="popup_title">Leaving so soon...?</h1>
-        <p>How about a 10% discount? Use code SAVE10 at checkout!</p>
-        <p class="close_popup">(click anywhere to close)</p>
-      </div>
-    </div>
     <div class="container">
       <div class="slide slide-1-content">
-        <div class="text">
-          <h6>New Collection</h6>
-          <h5>Styles</h5>
+        <div class="slide-content">
+          <h6 class="slide-heading">New Collection</h6>
+          <h5 class="slide-subtext">Styles</h5>
           <div class="slide-btn">
             <button class="btn btn-slide">Men</button>
             <button class="btn btn-slide">Women</button>
           </div>
         </div>
       </div>
-      <div class="best-sellers">
-        <h6>Our Best Sellers</h6>
-        <div class="product-imgs">
+
+      <!-- Best Sellers -->
+
+      <div id="best-sellers" class="best-sellers">
+        <h6 class="best-sellers-text">Our Best Sellers</h6>
+        <div class="best-seller-imgs">
           <div class="product-one">
             <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
             <h4>LE NOUVEAU CARTABLE OLIVE</h4>
@@ -75,18 +107,24 @@
         </div>
         <button class="btn btn-learn-more">Shop All Best Sellers</button>
       </div>
+
+      <!-- Slide -->
+
       <div class="slide slide-2-content">
-        <div class="text">
-          <h6>Working With</h6>
-          <h5>Le Grand Sac</h5>
+        <div class="slide-content">
+          <h6 class="slide-heading">Working With</h6>
+          <h5 class="slide-subtext">Le Grand Sac</h5>
           <div class="slide-btn">
             <button class="btn btn-slide">Discover</button>
           </div>
         </div>
       </div>
-      <div class="best-sellers">
-        <h6>New Colors</h6>
-        <div class="product-imgs">
+
+      <!-- Best Sellers -->
+
+      <div id="best-sellers" class="best-sellers">
+        <h6 class="best-sellers-text">New Colors</h6>
+        <div class="best-seller-imgs">
           <div class="product-one">
             <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
             <h4>LE NOUVEAU CARTABLE OLIVE</h4>
@@ -112,18 +150,24 @@
           </div>
         </div>
       </div>
+
+      <!-- Slide -->
+
       <div class="slide slide-3-content">
-        <div class="text">
-          <h6>Chilling with</h6>
-          <h5>La Double Pouchette</h5>
+        <div class="slide-content">
+          <h6 class="slide-heading">Chilling with</h6>
+          <h5 class="slide-subtext">La Double Pouchette</h5>
           <div class="slide-btn">
             <button class="btn btn-slide">Discover</button>
           </div>
         </div>
       </div>
-      <div class="best-sellers">
-        <h6>Back in Stock</h6>
-        <div class="product-imgs">
+
+      <!-- Best Sellers -->
+
+      <div id="best-sellers" class="best-sellers">
+        <h6 class="best-sellers-text">Back in Stock</h6>
+        <div class="best-seller-imgs">
           <div class="product-one">
             <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
             <h4>LE NOUVEAU CARTABLE OLIVE</h4>
@@ -152,6 +196,9 @@
       </div>
     </div>
   </body>
+
+  <!-- Footer -->
+
   <footer class="footer">
     <div class="footer-1">
       <h5 class="about">About The Shop</h5>
