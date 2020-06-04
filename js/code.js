@@ -27,9 +27,13 @@ function closePopup() {
 }
 
 function openNav() {
-  document.getElementById("sidebar").style.width = "25%";
-  document.getElementById("main").style.marginLeft = "25%";
-  header.style.width = "75%";
+  if (window.innerWidth < 768) {
+    document.getElementById("sidebar").style.width = "85%";
+  } else {
+    document.getElementById("sidebar").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
+    header.style.width = "75%";
+  }
 }
 
 function closeNav() {
