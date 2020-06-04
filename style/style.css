@@ -24,10 +24,41 @@
 /* Sidebar */
 
 .sidebar{
-  display: none;
+  display: flex;
   position: fixed;
   z-index: 999;
   flex-direction: column;
+  height: 100%;
+  width: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a{
+  padding: 0 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #575757;
+}
+
+.sidebar a:hover{
+  color: #cccccc;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar a:first-child{
+  text-align: right;
+  font-size: 3rem;
+}
+
+.sidebar a:not(:first-child) {
+  font-size: 1.6rem;
+}
+
+#main {
+  transition: margin-left .5s;
 }
 
 /* Popup */
@@ -91,6 +122,7 @@
   width: 100%;
   color: white;
   transition: color ease-in 0.15s;
+  transition: width 0.5s;
 }
 
 .navbar:hover {
