@@ -26,5 +26,17 @@ function closePopup() {
   }
 }
 
+function openNav() {
+  document.getElementById("sidebar").style.width = "25%";
+  document.getElementById("main").style.marginLeft = "25%";
+  header.style.width = "75%";
+}
+
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  header.style.width = "100%";
+}
+
 document.addEventListener("mouseout", mouseOut);
 document.addEventListener("click", closePopup);
