@@ -21,8 +21,10 @@
   <!-- Sidebar -->
 
   <div class="sidebar_wrapper">
-    <div class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <a href="#">Home</a>
       <a href="#">Products</a>
       <a href="#">About Us</a>
@@ -40,214 +42,216 @@
     </div>
   </div>
 
-  <!-- Header: Popbar and Navigation Bar  -->
+  <div id="main">
+    <!-- Header: Popbar and Navigation Bar  -->
 
-  <header>
-    <div id="popbar">
-      <p>Free Shipping on Orders over $70</p>
-    </div>
-    <nav id="navbar" class="navbar">
-      <i onclick="openNav()" class="fas fa-bars"></i>
-      <img
-        id="logo"
-        class="logo"
-        src="./img/Logo-white-2x_130x@2x.png"
-        alt=""
-      />
-      <div class="nav-right">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-shopping-bag"></i>
+    <header>
+      <div id="popbar">
+        <p>Free Shipping on Orders over $70</p>
       </div>
-    </nav>
-  </header>
+      <nav id="navbar" class="navbar">
+        <i onclick="openNav()" class="fas fa-bars"></i>
+        <img
+          id="logo"
+          class="logo"
+          src="./img/Logo-white-2x_130x@2x.png"
+          alt=""
+        />
+        <div class="nav-right">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
 
-  <!-- Body -->
+    <!-- Body -->
 
-  <body>
-    <div class="container">
-      <div class="slide slide-1-content">
-        <div class="slide-content">
-          <h6 class="slide-heading">New Collection</h6>
-          <h5 class="slide-subtext">Styles</h5>
-          <div class="slide-btn">
-            <button class="btn btn-slide">Men</button>
-            <button class="btn btn-slide">Women</button>
+    <body>
+      <div class="container">
+        <div class="slide slide-1-content">
+          <div class="slide-content">
+            <h6 class="slide-heading">New Collection</h6>
+            <h5 class="slide-subtext">Styles</h5>
+            <div class="slide-btn">
+              <button class="btn btn-slide">Men</button>
+              <button class="btn btn-slide">Women</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Best Sellers -->
+        <!-- Best Sellers -->
 
-      <div id="best-sellers" class="best-sellers">
-        <h6 class="best-sellers-text">Our Best Sellers</h6>
-        <div class="best-seller-imgs">
-          <div class="product-one">
-            <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE OLIVE</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
+        <div id="best-sellers" class="best-sellers">
+          <h6 class="best-sellers-text">Our Best Sellers</h6>
+          <div class="best-seller-imgs">
+            <div class="product-one">
+              <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE OLIVE</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-two">
+              <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE BROWN</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-three">
+              <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
+              <h4>LEATHER BACKPACK CAMEL</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-four">
+              <img
+                src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
+                alt=""
+              />
+              <h4>LE VOYAGEUR BLACK</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
           </div>
-          <div class="product-two">
-            <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE BROWN</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-three">
-            <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
-            <h4>LEATHER BACKPACK CAMEL</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-four">
-            <img
-              src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
-              alt=""
-            />
-            <h4>LE VOYAGEUR BLACK</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
+          <button class="btn btn-learn-more">Shop All Best Sellers</button>
+        </div>
+
+        <!-- Slide -->
+
+        <div class="slide slide-2-content">
+          <div class="slide-content">
+            <h6 class="slide-heading">Working With</h6>
+            <h5 class="slide-subtext">Le Grand Sac</h5>
+            <div class="slide-btn">
+              <button class="btn btn-slide">Discover</button>
+            </div>
           </div>
         </div>
-        <button class="btn btn-learn-more">Shop All Best Sellers</button>
-      </div>
 
-      <!-- Slide -->
+        <!-- Best Sellers -->
 
-      <div class="slide slide-2-content">
-        <div class="slide-content">
-          <h6 class="slide-heading">Working With</h6>
-          <h5 class="slide-subtext">Le Grand Sac</h5>
-          <div class="slide-btn">
-            <button class="btn btn-slide">Discover</button>
+        <div id="best-sellers" class="best-sellers">
+          <h6 class="best-sellers-text">New Colors</h6>
+          <div class="best-seller-imgs">
+            <div class="product-one">
+              <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE OLIVE</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-two">
+              <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE BROWN</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-three">
+              <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
+              <h4>LEATHER BACKPACK CAMEL</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-four">
+              <img
+                src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
+                alt=""
+              />
+              <h4>LE VOYAGEUR BLACK</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Best Sellers -->
+        <!-- Slide -->
 
-      <div id="best-sellers" class="best-sellers">
-        <h6 class="best-sellers-text">New Colors</h6>
-        <div class="best-seller-imgs">
-          <div class="product-one">
-            <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE OLIVE</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-two">
-            <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE BROWN</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-three">
-            <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
-            <h4>LEATHER BACKPACK CAMEL</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-four">
-            <img
-              src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
-              alt=""
-            />
-            <h4>LE VOYAGEUR BLACK</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
+        <div class="slide slide-3-content">
+          <div class="slide-content">
+            <h6 class="slide-heading">Chilling with</h6>
+            <h5 class="slide-subtext">La Double Pouchette</h5>
+            <div class="slide-btn">
+              <button class="btn btn-slide">Discover</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Slide -->
+        <!-- Best Sellers -->
 
-      <div class="slide slide-3-content">
-        <div class="slide-content">
-          <h6 class="slide-heading">Chilling with</h6>
-          <h5 class="slide-subtext">La Double Pouchette</h5>
-          <div class="slide-btn">
-            <button class="btn btn-slide">Discover</button>
+        <div id="best-sellers" class="best-sellers">
+          <h6 class="best-sellers-text">Back in Stock</h6>
+          <div class="best-seller-imgs">
+            <div class="product-one">
+              <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE OLIVE</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-two">
+              <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
+              <h4>LE NOUVEAU CARTABLE BROWN</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-three">
+              <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
+              <h4>LEATHER BACKPACK CAMEL</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
+            <div class="product-four">
+              <img
+                src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
+                alt=""
+              />
+              <h4>LE VOYAGEUR BLACK</h4>
+              <p>$49.99 <span class="discount">$99.99</span></p>
+            </div>
           </div>
+          <button class="btn btn-learn-more">Shop All Colors</button>
         </div>
       </div>
+    </body>
 
-      <!-- Best Sellers -->
+    <!-- Footer -->
 
-      <div id="best-sellers" class="best-sellers">
-        <h6 class="best-sellers-text">Back in Stock</h6>
-        <div class="best-seller-imgs">
-          <div class="product-one">
-            <img src="./img/Le-Nouveau-Cartable-Kaki-01_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE OLIVE</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-two">
-            <img src="./img/Nouveau-Cartable-marron-1_1000x.jpg" alt="" />
-            <h4>LE NOUVEAU CARTABLE BROWN</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-three">
-            <img src="./img/Sac-a-Dos-Camel-01_1000x.jpg" alt="" />
-            <h4>LEATHER BACKPACK CAMEL</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
-          <div class="product-four">
-            <img
-              src="./img/Sac-Voyage-Noir-01_ca28072a-ba7d-4a25-bf67-6488c2b95c88_1000x.jpg"
-              alt=""
-            />
-            <h4>LE VOYAGEUR BLACK</h4>
-            <p>$49.99 <span class="discount">$99.99</span></p>
-          </div>
+    <footer class="footer">
+      <div class="footer-1">
+        <h5 class="about">About The Shop</h5>
+        <p class="about-descr">
+          The story of Leo and Violette, it's ours. We are Léo Dominguez &
+          Violette Polchi. Two Parisian lovers sharing our lives for more than 8
+          years. Since the early days of our meeting, we always had the dream to
+          develop a project together. By creating Le petit cartable in January
+          2013, we started to realize this dream.
+        </p>
+        <div class="social">
+          <i class="fab fa-facebook-f sicon"></i>
+          <i class="fab fa-twitter sicon"></i>
+          <i class="fab fa-instagram sicon"></i>
+          <i class="fab fa-pinterest sicon"></i>
+          <i class="fab fa-vimeo-v sicon"></i>
         </div>
-        <button class="btn btn-learn-more">Shop All Colors</button>
       </div>
-    </div>
-  </body>
-
-  <!-- Footer -->
-
-  <footer class="footer">
-    <div class="footer-1">
-      <h5 class="about">About The Shop</h5>
-      <p class="about-descr">
-        The story of Leo and Violette, it's ours. We are Léo Dominguez &
-        Violette Polchi. Two Parisian lovers sharing our lives for more than 8
-        years. Since the early days of our meeting, we always had the dream to
-        develop a project together. By creating Le petit cartable in January
-        2013, we started to realize this dream.
-      </p>
-      <div class="social">
-        <i class="fab fa-facebook-f sicon"></i>
-        <i class="fab fa-twitter sicon"></i>
-        <i class="fab fa-instagram sicon"></i>
-        <i class="fab fa-pinterest sicon"></i>
-        <i class="fab fa-vimeo-v sicon"></i>
+      <div class="footer-2">
+        <h5 class="shop">Shop</h5>
+        <a href="#" class="products link">All Products</a>
+        <a href="#" class="briefcases link">Briefcases</a>
+        <a href="#" class="handbags link">Handbags</a>
+        <a href="#" class="backpacks link">Backpacks</a>
+        <a href="#" class="pochettes link">Pochettes</a>
       </div>
-    </div>
-    <div class="footer-2">
-      <h5 class="shop">Shop</h5>
-      <a href="#" class="products link">All Products</a>
-      <a href="#" class="briefcases link">Briefcases</a>
-      <a href="#" class="handbags link">Handbags</a>
-      <a href="#" class="backpacks link">Backpacks</a>
-      <a href="#" class="pochettes link">Pochettes</a>
-    </div>
-    <div class="footer-3">
-      <h5 class="info">Information</h5>
-      <a href="#" class="contact link">Contact Us</a>
-      <a href="#" class="about link">About Us</a>
-      <a href="#" class="FAQ link">FAQ</a>
-      <a href="#" class="blog link">Our Blog</a>
-    </div>
-    <div class="footer-4">
-      <h5 class="newsletter">Newsletter</h5>
-      <p class="news-descr">
-        Subscribe to get notified about product launches, special offers and
-        company news.
-      </p>
-      <input
-        type="email"
-        name="email"
-        class="email"
-        id="email"
-        placeholder="Enter your email address"
-        required
-      />
-      <button class="btn btn-learn-more subscribe">Subscribe</button>
-    </div>
-  </footer>
+      <div class="footer-3">
+        <h5 class="info">Information</h5>
+        <a href="#" class="contact link">Contact Us</a>
+        <a href="#" class="about link">About Us</a>
+        <a href="#" class="FAQ link">FAQ</a>
+        <a href="#" class="blog link">Our Blog</a>
+      </div>
+      <div class="footer-4">
+        <h5 class="newsletter">Newsletter</h5>
+        <p class="news-descr">
+          Subscribe to get notified about product launches, special offers and
+          company news.
+        </p>
+        <input
+          type="email"
+          name="email"
+          class="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <button class="btn btn-learn-more subscribe">Subscribe</button>
+      </div>
+    </footer>
+  </div>
   <script src="./js/code.js"></script>
 </html>
