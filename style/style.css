@@ -8,9 +8,12 @@
 
 /* Icons */
 
-.fa-bars {
+.fa-bars::before {
+  position: relative;
   font-size: 1.3rem;
   cursor: pointer;
+  z-index: 1;
+  
 }
 
 .fa-search {
@@ -22,24 +25,35 @@
   cursor: pointer;
 }
 
+.colorForce {
+  position: relative;
+  left: -70px;
+  transition: 0.5s;
+  color: whitesmoke !important;
+}
 /* Sidebar */
 
 .sidebar{
   display: flex;
   position: fixed;
-  z-index: 999;
+  z-index: 0;
   flex-direction: column;
   height: 100%;
   width: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
+  padding-top: 40px;
 }
 
 .sidebar a{
   padding: 0 30px;
   text-decoration: none;
   color: #575757;
+  position: relative;
+  top: 40px;
+  font-size: 1.6rem;
+  padding-top: 20px;
 }
 
 .sidebar a:hover{
@@ -47,18 +61,14 @@
   transition: color 0.3s ease-in-out;
 }
 
-.sidebar a:first-child{
+/* .sidebar a:first-child{
   text-align: right;
   font-size: 3rem;
   position: relative;
   top: 55px;
-}
+} */
 
-.sidebar a:not(:first-child) {
-  position: relative;
-  top: 40px;
-  font-size: 1.6rem;
-  padding-top: 20px;
+.sidebar a {
 }
 
 #main {
@@ -140,7 +150,6 @@
 
 #logo {
   width: 130px;
-  user-drag: none;
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
