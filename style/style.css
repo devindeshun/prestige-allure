@@ -13,7 +13,6 @@
   font-size: 1.3rem;
   cursor: pointer;
   z-index: 1;
-  
 }
 
 .fa-search {
@@ -27,9 +26,10 @@
 
 .colorForce {
   position: relative;
+  transition: 0.7s;
   left: -70px;
-  transition: 0.5s;
   color: whitesmoke !important;
+  transform: rotate(90deg);
 }
 /* Sidebar */
 
