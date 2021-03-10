@@ -3,8 +3,10 @@ window.onscroll = function() {
   stickyNav();
 };
 
-// Get the header
+// Get the header, popup, and sidebar
 let header = document.querySelector("#navbar");
+let sidebar = document.getElementById("sidebar");
+let popup = document.getElementById("popup");
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;
@@ -15,41 +17,41 @@ let stickyNav = () => window.pageYOffset > sticky ? header.classList.add("sticky
 function mouseOut(event) {
   if (event.clientY < 20) {
     document.removeEventListener("mouseout", mouseOut);
-    document.getElementById("popup").style.display = "block";
+    popup.style.display = "block";
   }
 }
 
 function closePopup() {
-  if (document.getElementById("popup").style.display == "block") {
+  if (popup.style.display == "block") {
     document.removeEventListener("click", closePopup);
-    document.getElementById("popup").style.display = "none";
+    popup.style.display = "none";
   }
 }
 
-async function toggleNav() {
-  if (document.getElementById("sidebar").style.width == "0px") {
+function toggleNav() {
+  if (sidebar.style.width == "0px") {
     if (window.innerWidth < 768) {
-      document.getElementById("sidebar").style.width = "85%";
-      document.getElementById("sidebar").style.zIndex = "999";
+      document.querySelector(".closebtn").style.display = "block";
+      sidebar.style.paddingTop = 0;
+      sidebar.style.width = "85%";
+      sidebar.style.zIndex = "999";
     } else {
-      document.getElementsByClassName('fa-bars')[0].classList.add('colorForce');
-      document.getElementById("sidebar").style.width = "25%";
+      document.querySelector('.fa-bars').classList.add('colorForce');
+      sidebar.style.width = "25%";
       document.getElementById("main").style.marginLeft = "25%";
       header.style.width = "75%";
     }
   } else {
-    document.getElementsByClassName('fa-bars')[0].classList.remove('colorForce');
-    document.getElementById("sidebar").style.width = "0";
+    document.querySelector('.fa-bars').classList.remove('colorForce', 'colorForceMobile');
+    sidebar.style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     header.style.width = "100%";
-    await changeZ();
+    sidebar.style.zIndex = "0";
   }
 
 }
 
-function changeZ(){
-  document.getElementById("sidebar").style.zIndex = "0";
-}
+
 
 
 
