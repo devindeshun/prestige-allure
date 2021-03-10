@@ -13,7 +13,6 @@
   font-size: 1.3rem;
   cursor: pointer;
   z-index: 1;
-  
 }
 
 .fa-search {
@@ -27,11 +26,22 @@
 
 .colorForce {
   position: relative;
+  transition: 0.7s;
   left: -70px;
-  transition: 0.5s;
   color: whitesmoke !important;
+  transform: rotate(90deg);
 }
+
+.closebtn {
+  display: none;
+  text-align: right;
+  transform: scale(1);
+}
+
 /* Sidebar */
+.sidebar div {
+  width: 0px;
+}
 
 .sidebar{
   display: flex;
@@ -39,7 +49,6 @@
   z-index: 0;
   flex-direction: column;
   height: 100%;
-  width: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -428,6 +437,7 @@
     font-size: 1.4rem;
   }
   .subscribe {
+    min-width: 164px;
     width: 50%;
     text-align: center;
     justify-content: flex-start;
